@@ -1,0 +1,33 @@
+<div class="sidebar-logo">
+  <a href="/">
+    <img *ngIf="isCollapsed" width="32" src="../assets/img/logos/m-branco.png" alt="logo">
+    <img *ngIf="!isCollapsed" width="70px" height="34" src="../assets/img/logos/meta-branco.png" alt="logo">
+  </a>
+</div>
+
+<ul class="sidebar-menu" nz-menu
+  nzTheme="light"
+  nzMode="inline"
+  [nzInlineCollapsed]="isCollapsed"
+>
+  <li nz-submenu class="menu-title" nzTitle="Dashboard" nzIcon="dashboard">
+    <ul>
+      <li nz-menu-item nzMatchRouter>
+        <a routerLink="/welcome">Welcome</a>
+      </li>
+      <li nz-menu-item nzMatchRouter>
+        <a>Monitor</a>
+      </li>
+      <li nz-menu-item nzMatchRouter>
+        <a>Workplace</a>
+      </li>
+    </ul>
+  </li>
+  <li nz-submenu nzTitle="Form" nzIcon="form">
+    <ul>
+      <li nz-menu-item nzMatchRouter>
+        <a>Basic Form</a>
+      </li>
+    </ul>
+  </li>
+</ul>
