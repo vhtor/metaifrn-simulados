@@ -10,24 +10,27 @@
   nzMode="inline"
   [nzInlineCollapsed]="isCollapsed"
 >
-  <li nz-submenu class="menu-title" nzTitle="Dashboard" nzIcon="dashboard">
-    <ul>
-      <li nz-menu-item>
-        <a routerLink="/welcome">Welcome</a>
-      </li>
-      <li nz-menu-item>
-        <a>Monitor</a>
-      </li>
-      <li nz-menu-item>
-        <a>Workplace</a>
-      </li>
-    </ul>
+  <li nz-menu-item class="menu-title">
+    <span nz-icon nzType="home" nzTheme="fill"></span>
+    <span>Inicio</span>
   </li>
-  <li nz-submenu class="menu-title" nzTitle="Form" nzIcon="form">
+  <li nz-menu-item class="menu-title">
+    <span nz-icon nzType="fund" nzTheme="fill"></span>
+    <span>Desempenho</span>
+  </li>
+  <li nz-menu-item class="menu-title">
+    <span nz-icon nzType="trophy" nzTheme="fill"></span>
+    <span>Concorrência</span>
+  </li>
+  <li nz-submenu class="menu-title" nzTitle="Conta" nzIcon="setting-fill">
     <ul>
       <li nz-menu-item>
         <a>Basic Form</a>
       </li>
     </ul>
+  </li>
+  <li nz-menu-item class="menu-title">
+    <span nz-icon nzType="question-circle" nzTheme="fill"></span>
+    <span>Suporte</span>
   </li>
 </ul>
