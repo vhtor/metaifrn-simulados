@@ -15,6 +15,10 @@
     <span>Inicio</span>
   </li>
   <li nz-menu-item class="menu-title">
+    <span nz-icon nzType="file-text" nzTheme="fill"></span>
+    <span>Simulados</span>
+  </li>
+  <li nz-menu-item class="menu-title">
     <span nz-icon nzType="fund" nzTheme="fill"></span>
     <span>Desempenho</span>
   </li>
@@ -24,8 +28,17 @@
   </li>
   <li nz-submenu class="menu-title" nzTitle="Conta" nzIcon="setting-fill">
     <ul>
-      <li nz-menu-item>
-        <a>Basic Form</a>
+      <li nz-menu-item nzMatchRouter>
+        <a>Editar perfil</a>
+      </li>
+      <li nz-menu-item nzMatchRouter>
+        <a>Plano</a>
+      </li>
+      <li nz-menu-item nzMatchRouter>
+        <a>Sobre</a>
+      </li>
+      <li nz-menu-item nzMatchRouter>
+        <a>Sair</a>
       </li>
     </ul>
   </li>
