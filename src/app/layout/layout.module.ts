@@ -12,13 +12,15 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContentComponent } from './content/content.component';
 import { UiToolkitComponent } from "./ui-toolkit/ui-toolkit.component";
 import { RouterOutlet } from "@angular/router";
+import { UserSumupComponent } from './sidebar/user-sumup/user-sumup.component';
 
 @NgModule({
   declarations: [
     LayoutComponent,
     SidebarComponent,
     ContentComponent,
-    UiToolkitComponent
+    UiToolkitComponent,
+    UserSumupComponent
   ],
   imports: [
     BrowserModule,
