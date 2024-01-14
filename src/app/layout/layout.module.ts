@@ -10,12 +10,15 @@ import { FormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContentComponent } from './content/content.component';
+import { UiToolkitComponent } from "./ui-toolkit/ui-toolkit.component";
+import { RouterOutlet } from "@angular/router";
 
 @NgModule({
   declarations: [
     LayoutComponent,
     SidebarComponent,
-    ContentComponent
+    ContentComponent,
+    UiToolkitComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,8 @@ import { ContentComponent } from './content/content.component';
     BrowserAnimationsModule,
     IconsProviderModule,
     NzLayoutModule,
-    NzMenuModule
+    NzMenuModule,
+    RouterOutlet
   ],
   providers: [
     { provide: NZ_I18N, useValue: pt_BR }
