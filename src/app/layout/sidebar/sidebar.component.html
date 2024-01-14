@@ -5,28 +5,29 @@
   </a>
 </div>
 
-<ul class="sidebar-menu" nz-menu
-  nzTheme="light"
-  nzMode="inline"
-  [nzInlineCollapsed]="isCollapsed"
->
-  <app-user-sumup></app-user-sumup>
+<ul class="sidebar-menu" nz-menu nzTheme="light" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
+  <app-user-description></app-user-description>
+
   <li nz-menu-item class="menu-title">
     <span nz-icon nzType="home" nzTheme="fill"></span>
     <span>Inicio</span>
   </li>
+
   <li nz-menu-item class="menu-title">
     <span nz-icon nzType="file-text" nzTheme="fill"></span>
     <span>Simulados</span>
   </li>
+
   <li nz-menu-item class="menu-title">
     <span nz-icon nzType="fund" nzTheme="fill"></span>
     <span>Desempenho</span>
   </li>
+
   <li nz-menu-item class="menu-title">
     <span nz-icon nzType="trophy" nzTheme="fill"></span>
     <span>Concorrência</span>
   </li>
+
   <li nz-submenu class="menu-title" nzTitle="Conta" nzIcon="setting-fill">
     <ul>
       <li nz-menu-item nzMatchRouter>
@@ -43,6 +44,7 @@
       </li>
     </ul>
   </li>
+
   <li nz-menu-item class="menu-title">
     <span nz-icon nzType="question-circle" nzTheme="fill"></span>
     <span>Suporte</span>

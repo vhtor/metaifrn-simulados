@@ -1,12 +1,5 @@
 @import "/src/styles.less";
 
-:host {
-  display: flex;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 .app-layout {
   height: 100vh;
 }
@@ -23,10 +16,13 @@
   padding: 20px 24px;
   font-size: 20px;
   cursor: pointer;
-  transition: all .3s,padding 0s;
 }
 
-.trigger:hover {
+.trigger-icon {
+  transition: color .3s;
+}
+
+.trigger-icon:hover {
   color: @pinkish-red-100;
 }
 
@@ -46,6 +42,6 @@ nz-header {
 }
 
 nz-content {
-  margin: 24px;
+  padding: 24px;
 }
 

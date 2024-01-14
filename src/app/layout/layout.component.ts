@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./layout.component.less']
 })
 export class LayoutComponent {
-  isCollapsed = false;
+  isCollapsed = true;
 }

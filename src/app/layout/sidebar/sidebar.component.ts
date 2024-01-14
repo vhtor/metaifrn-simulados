@@ -6,5 +6,5 @@ import { Component, Input } from "@angular/core";
   styleUrls: ["./sidebar.component.less"],
 })
 export class SidebarComponent {
-  @Input() isCollapsed = false;
+  @Input() isCollapsed = true;
 }
