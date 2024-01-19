@@ -7,7 +7,10 @@
     [nzCollapsed]="isCollapsed"
     [nzTrigger]="null"
   >
-    <app-sidebar [isCollapsed]="isCollapsed"></app-sidebar>
+    <app-sidebar
+      [userId]="userId"
+      [isCollapsed]="isCollapsed">
+    </app-sidebar>
   </nz-sider>
 
   <nz-layout>

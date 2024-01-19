@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./layout.component.less']
 })
 export class LayoutComponent {
+  readonly userId: number = 1;
+
   isCollapsed = true;
 }
