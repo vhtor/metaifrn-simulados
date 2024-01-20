@@ -1,4 +1,5 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, Input, OnInit } from "@angular/core";
+import { User } from "src/app/model/domain/user.model";
 
 @Component({
   selector: "app-user-description",
@@ -7,7 +8,13 @@ import { Component, OnInit } from "@angular/core";
 })
 export class UserDescriptionComponent implements OnInit {
 
-  ngOnInit(): void {
+  @Input()
+  public user!: User | null;
 
+  @Input()
+  public isCollapsed!: boolean | null;
+
+  ngOnInit(): void {
+    console.log(this.user);
   }
 }

@@ -11,7 +11,7 @@ export class SidebarComponent implements OnInit {
   @Input() userId: number = 1;
   @Input() isCollapsed = true;
 
-  private user!: User;
+  public user!: User;
 
   constructor(private userService: UserService) {
 

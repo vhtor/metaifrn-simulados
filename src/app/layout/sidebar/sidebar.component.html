@@ -23,7 +23,10 @@
   nzMode="inline"
   [nzInlineCollapsed]="isCollapsed"
 >
-  <app-user-description></app-user-description>
+  <app-user-description
+    [user]="user"
+    [isCollapsed]="isCollapsed"
+  ></app-user-description>
 
   <li nz-menu-item class="menu-title">
     <span
@@ -76,7 +79,7 @@
     nzIcon="setting-fill"
     nz-tooltip="Conta"
     nzTooltipPlacement="right"
-    >
+  >
     <ul>
       <li nz-menu-item nzMatchRouter>
         <a>Editar perfil</a>

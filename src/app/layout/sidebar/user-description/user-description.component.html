@@ -1,3 +1,7 @@
 <div class="container">
-  <nz-avatar nzSize="large" nzIcon="user"></nz-avatar>
+  <nz-avatar
+    [nzSrc]="user?.avatar"
+    [nzSize]="isCollapsed ? 64 : 100"
+    nzIcon="user">
+  </nz-avatar>
 </div>
