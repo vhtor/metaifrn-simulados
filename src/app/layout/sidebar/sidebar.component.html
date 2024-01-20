@@ -1,34 +1,82 @@
 <div class="sidebar-logo">
   <a href="/">
-    <img *ngIf="isCollapsed" width="32" src="../assets/img/logos/m-branco.png" alt="logo">
-    <img *ngIf="!isCollapsed" width="70px" height="34" src="../assets/img/logos/meta-branco.png" alt="logo">
+    <img
+      *ngIf="isCollapsed"
+      width="32"
+      src="../assets/img/logos/m-branco.png"
+      alt="logo"
+    />
+    <img
+      *ngIf="!isCollapsed"
+      width="70px"
+      height="34"
+      src="../assets/img/logos/meta-branco.png"
+      alt="logo"
+    />
   </a>
 </div>
 
-<ul class="sidebar-menu" nz-menu nzTheme="light" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
+<ul
+  class="sidebar-menu"
+  nz-menu
+  nzTheme="light"
+  nzMode="inline"
+  [nzInlineCollapsed]="isCollapsed"
+>
   <app-user-description></app-user-description>
 
   <li nz-menu-item class="menu-title">
-    <span nz-icon nzType="home" nzTheme="fill"></span>
+    <span
+      nz-icon
+      nzType="home"
+      nzTheme="fill"
+      nz-tooltip="Inicio"
+      nzTooltipPlacement="right"
+    ></span>
     <span>Inicio</span>
   </li>
 
   <li nz-menu-item class="menu-title">
-    <span nz-icon nzType="file-text" nzTheme="fill"></span>
+    <span
+      nz-icon
+      nzType="file-text"
+      nzTheme="fill"
+      nz-tooltip="Simulados"
+      nzTooltipPlacement="right"
+    ></span>
     <span>Simulados</span>
   </li>
 
   <li nz-menu-item class="menu-title">
-    <span nz-icon nzType="fund" nzTheme="fill"></span>
+    <span
+      nz-icon
+      nzType="fund"
+      nzTheme="fill"
+      nz-tooltip="Desempenho"
+      nzTooltipPlacement="right"
+    ></span>
     <span>Desempenho</span>
   </li>
 
   <li nz-menu-item class="menu-title">
-    <span nz-icon nzType="trophy" nzTheme="fill"></span>
+    <span
+      nz-icon
+      nzType="trophy"
+      nzTheme="fill"
+      nz-tooltip="Concorrência"
+      nzTooltipPlacement="right"
+    ></span>
     <span>Concorrência</span>
   </li>
 
-  <li nz-submenu class="menu-title" nzTitle="Conta" nzIcon="setting-fill">
+  <li
+    nz-submenu
+    class="menu-title"
+    nzTitle="Conta"
+    nzIcon="setting-fill"
+    nz-tooltip="Conta"
+    nzTooltipPlacement="right"
+    >
     <ul>
       <li nz-menu-item nzMatchRouter>
         <a>Editar perfil</a>
@@ -45,7 +93,12 @@
     </ul>
   </li>
 
-  <li nz-menu-item class="menu-title">
+  <li
+    nz-menu-item
+    class="menu-title"
+    nz-tooltip="Suporte"
+    nzTooltipPlacement="right"
+  >
     <span nz-icon nzType="question-circle" nzTheme="fill"></span>
     <span>Suporte</span>
   </li>

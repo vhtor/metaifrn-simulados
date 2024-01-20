@@ -15,6 +15,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { UserDescriptionComponent } from "./sidebar/user-description/user-description.component";
 import { UiToolkitComponent } from "./ui-toolkit/ui-toolkit.component";
 import { NzAvatarModule } from 'ng-zorro-antd/avatar';
+import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { NzAvatarModule } from 'ng-zorro-antd/avatar';
     NzLayoutModule,
     NzMenuModule,
     NzAvatarModule,
+    NzToolTipModule,
     RouterOutlet
   ],
   providers: [
