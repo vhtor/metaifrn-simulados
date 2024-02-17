@@ -6,15 +6,33 @@
 @import "../node_modules/ng-zorro-antd/ng-zorro-antd.less";
 
 // Override less variables here (all variables: https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/components/style/themes/default.less)
+// >>> Primary
 @primary-color: @pinkish-red-100;
+/* @primary-color-hover: color(~`colorPalette('@{primary-color}', 5) `);
+@primary-color-active: color(~`colorPalette('@{primary-color}', 7) `);
+@primary-color-outline: fade(@primary-color, @outline-fade); */
 
-/* Text */
-@menu-item-color: #FFF;
-@menu-highlight-color: @black-100;
-
-/* Backgrounds */
+/* Backgrounds colors */
 @component-background: linear-gradient(90deg, @redish-orange-100 0%, @pinkish-red-100 100%);
+@darker-gradient-background: linear-gradient(90deg, @redish-orange-darker 0%, @dark-red-100 100%);
+@lighter-gradient-background: linear-gradient(90deg, @redish-orange-75 0%, @dark-red-75 100%);
 @background-color-light: @component-background;
 @layout-header-background: @component-background;
-@layout-sider-background: @layout-header-background;
-@menu-inline-submenu-bg: linear-gradient(90deg, @redsish-orange-darker 0%, @pinkish-red-100 100%);
+@layout-sider-background: @component-background;
+
+/* Menu */
+// -> Backgrounds
+@menu-bg: @component-background;
+@menu-popup-bg: @darker-gradient-background;
+@menu-item-active-bg: @darker-gradient-background;
+@menu-inline-submenu-bg: @darker-gradient-background;
+
+// -> Text colors
+@menu-item-color: #FFF;
+@menu-highlight-color: @menu-item-color;
+
+// -> Margin & Padding
+@menu-item-height: 50px;
+@menu-inline-toplevel-item-height: 50px;
+@menu-item-boundary-margin: 0;
+@menu-item-vertical-margin: 0;

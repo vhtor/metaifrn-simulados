@@ -19,6 +19,18 @@
   font-size: 1.1em;
 }
 
-.menu-title span {
-  transition: color 0s !important;
+.menu-title:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.075);
+}
+
+.menu-title {
+  transition: background 0.3s ease;
+}
+
+.menu-title:hover {
+  background: linear-gradient(90deg, #cf4242 0%, #96283e 100%);
+}
+
+.submenu-item a:hover {
+  font-weight: bold;
 }

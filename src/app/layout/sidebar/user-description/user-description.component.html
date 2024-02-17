@@ -1,7 +1,22 @@
 <div class="container">
   <nz-avatar
+    class="avatar"
     [nzSrc]="user?.avatar"
-    [nzSize]="isCollapsed ? 64 : 100"
+    [nzSize]="isCollapsed ? 60 : 100"
     nzIcon="user">
   </nz-avatar>
+
+  <div class="student-info" *ngIf="!isCollapsed">
+    <div class="student-name">
+      <strong>{{ user?.name }}</strong>
+    </div>
+
+    <div class="objectives-info">
+      <strong>META</strong> de curso: {{ user?.course }}
+    </div>
+
+    <div class="objectives-info">
+      <strong>META</strong> de campus: {{ user?.campus }}
+    </div>
+  </div>
 </div>
