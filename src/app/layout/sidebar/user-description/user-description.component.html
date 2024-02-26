@@ -1,22 +1,33 @@
 <div class="container">
-  <nz-avatar
-    class="avatar"
-    [nzSrc]="user?.avatar"
-    [nzSize]="isCollapsed ? 60 : 100"
-    nzIcon="user">
-  </nz-avatar>
+  @defer {
+    <nz-avatar
+      class="avatar"
+      [nzSrc]="user?.avatar"
+      [nzSize]="isCollapsed ? 60 : 100"
+      nzIcon="user">
+    </nz-avatar>
+  } @placeholder (minimum 2s) {
+    <nz-skeleton-element
+      [nzActive]="true"
+      nzType="avatar"
+      [nzShape]="avatarShape"
+      [nzSize]="isCollapsed ? 60 : 100"
+    ></nz-skeleton-element>
+  }
 
-  <div class="student-info" *ngIf="!isCollapsed">
-    <div class="student-name">
-      <strong>{{ user?.name }}</strong>
-    </div>
+  @if (!isCollapsed) {
+    <div class="student-info">
+      <div class="student-name">
+        <strong>{{ user?.name }}</strong>
+      </div>
 
-    <div class="objectives-info">
-      <strong>META</strong> de curso: {{ user?.course }}
-    </div>
+      <div class="objectives-info">
+        <strong>META</strong> de curso: {{ user?.course }}
+      </div>
 
-    <div class="objectives-info">
-      <strong>META</strong> de campus: {{ user?.campus }}
+      <div class="objectives-info">
+        <strong>META</strong> de campus: {{ user?.campus }}
+      </div>
     </div>
-  </div>
+  }
 </div>

@@ -1,18 +1,20 @@
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { LayoutModule } from './layout/layout.module';
-import { provideRouter } from "@angular/router";
-import { routes } from "./app.routes";
 import { HttpClientModule } from "@angular/common/http";
+import { provideRouter } from "@angular/router";
+import { AppComponent } from './app.component';
+import { routes } from "./app.routes";
+import { BrowserModule } from "@angular/platform-browser";
+import { LayoutComponent } from "./layout/layout.component";
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    LayoutModule,
-    HttpClientModule
+    BrowserModule,
+    HttpClientModule,
+    LayoutComponent
   ],
   bootstrap: [AppComponent],
   providers: [provideRouter(routes)]

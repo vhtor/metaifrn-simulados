@@ -1,18 +1,10 @@
 <div class="sidebar-logo">
   <a href="/">
-    <img
-      *ngIf="isCollapsed"
-      width="32"
-      src="../assets/img/logos/m-branco.png"
-      alt="logo"
-    />
-    <img
-      *ngIf="!isCollapsed"
-      width="70px"
-      height="34"
-      src="../assets/img/logos/meta-branco.png"
-      alt="logo"
-    />
+    @if (isCollapsed) {
+      <img width="32" src="../assets/img/logos/m-branco.png" alt="logo"/>
+    } @else {
+      <img width="70px" height="34" src="../assets/img/logos/meta-branco.png"alt="logo"/>
+    }
   </a>
 </div>
 
