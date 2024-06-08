@@ -16,7 +16,7 @@
   [nzInlineCollapsed]="isCollapsed"
 >
   <app-user-description
-    [user]="user"
+    [user]="user$ | async"
     [isCollapsed]="isCollapsed"
   ></app-user-description>
 

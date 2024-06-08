@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from "@angular/core";
-import { User } from "src/app/model/domain/user.model";
 import { NzAvatarModule } from "ng-zorro-antd/avatar";
-import { NzSkeletonModule, NzSkeletonAvatarShape } from "ng-zorro-antd/skeleton";
+import { NzSkeletonAvatarShape, NzSkeletonModule } from "ng-zorro-antd/skeleton";
+import { User } from "src/app/model/domain/user.model";
 
 @Component({
   standalone: true,
@@ -16,7 +16,7 @@ import { NzSkeletonModule, NzSkeletonAvatarShape } from "ng-zorro-antd/skeleton"
     NzSkeletonModule
   ]
 })
-export class UserDescriptionComponent implements OnInit {
+export class UserDescriptionComponent {
 
   avatarShape: NzSkeletonAvatarShape = "circle";
 
@@ -25,8 +25,4 @@ export class UserDescriptionComponent implements OnInit {
 
   @Input()
   isCollapsed!: boolean | null;
-
-  ngOnInit(): void {
-    console.log(this.user);
-  }
 }

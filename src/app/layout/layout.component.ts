@@ -3,6 +3,8 @@ import { NzLayoutModule, NzSiderComponent } from 'ng-zorro-antd/layout';
 import { SidebarComponent } from "./sidebar/sidebar.component";
 import { RouterOutlet } from "@angular/router";
 import { NzIconModule } from "ng-zorro-antd/icon";
+import { BehaviorSubject, of } from "rxjs";
+import { CommonModule } from "@angular/common";
 
 @Component({
   standalone: true,
@@ -11,6 +13,7 @@ import { NzIconModule } from "ng-zorro-antd/icon";
   styleUrls: ['./layout.component.less'],
   imports: [
     // Angular Modules
+    CommonModule,
     RouterOutlet,
     // Our modules/components
     SidebarComponent,
@@ -22,7 +25,10 @@ import { NzIconModule } from "ng-zorro-antd/icon";
   ]
 })
 export class LayoutComponent {
-  readonly userId: number = 1;
+  public readonly userId = 1;
 
-  isCollapsed = true;
+  public isCollapsed = true;
+
+  constructor() {
+  }
 }

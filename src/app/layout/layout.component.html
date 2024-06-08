@@ -2,15 +2,15 @@
   <nz-sider
     nzCollapsible
     class="sidebar"
-    [nzWidth]="isCollapsed ? 80 : 256"
     nzBreakpoint="md"
+    [nzWidth]="isCollapsed ? 80 : 256"
     [nzCollapsed]="isCollapsed"
     [nzTrigger]="null"
   >
-    <app-sidebar
+    <app-sidebar-component
       [userId]="userId"
       [isCollapsed]="isCollapsed">
-    </app-sidebar>
+    </app-sidebar-component>
   </nz-sider>
 
   <nz-layout>

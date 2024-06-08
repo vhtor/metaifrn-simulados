@@ -2,16 +2,16 @@
   @defer {
     <nz-avatar
       class="avatar"
+      nzIcon="user"
       [nzSrc]="user?.avatar"
-      [nzSize]="isCollapsed ? 60 : 100"
-      nzIcon="user">
+      [nzSize]="isCollapsed ? 40 : 100">
     </nz-avatar>
   } @placeholder (minimum 2s) {
     <nz-skeleton-element
-      [nzActive]="true"
       nzType="avatar"
+      [nzActive]="true"
       [nzShape]="avatarShape"
-      [nzSize]="isCollapsed ? 60 : 100"
+      [nzSize]="isCollapsed ? 40 : 100"
     ></nz-skeleton-element>
   }
 
